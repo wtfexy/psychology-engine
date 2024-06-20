@@ -6,9 +6,9 @@ name: buildAndroid
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ notweuz-main ]
+    branches: [ master ]
   pull_request:
-    branches: [ notweuz-main ]
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -83,7 +83,7 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@main
         with:
-          name: Android Build
+          name: Pscyh
           path: export/release/android/bin/app/build/outputs/apk/debug
  
           
