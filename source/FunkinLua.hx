@@ -17,7 +17,7 @@ import flixel.tweens.FlxEase;
 import flixel.text.FlxText;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.math.FlxPoint;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 import flixel.util.FlxTimer;
 import flixel.FlxSprite;
 import flixel.FlxCamera;
@@ -65,6 +65,7 @@ class FunkinLua {
 	public static var Function_StopLua:Dynamic = "##PSYCHLUA_FUNCTIONSTOPLUA";
 
 	//public var errorHandler:String->Void;
+	//source/flixel/system/FlxSound.hx:117: characters 33-46 : Warning : flixel.system.FlxSoundGroup was moved to flixel.sound.FlxSoundGroup
 	#if LUA_ALLOWED
 	public var lua:State = null;
 	#end
